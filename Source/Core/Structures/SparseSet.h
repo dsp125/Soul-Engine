@@ -28,7 +28,6 @@ public:
 
 protected:
 
-	std::vector<T> objects_;
 
 };
 

@@ -3,7 +3,6 @@
 #include "Entity.h"
 #include "Composition/Component/Component.h"
 #include "Core/Utility/ClassID/ClassID.h"
-#include "SparseEntitySet/AbstractSparseEntitySet.h"
 #include "SparseEntitySet/SparseEntitySet.h"
 
 #include <vector>
@@ -54,7 +53,7 @@ public:
 
 private:
 
-	std::vector<std::unique_ptr<AbstractSparseEntitySet>> componentPools_;
+	std::vector<std::unique_ptr<SparseEntitySet> > componentPools_;
 	std::vector<Entity> entities_;
 
 	size_t availableEntities_;
